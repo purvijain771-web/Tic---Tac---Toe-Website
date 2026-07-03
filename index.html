@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🎮 Tic Tac Toe Pro</h1>
+
+    <div class="modes">
+        <button onclick="setMode('pvp')">PvP</button>
+        <button onclick="setMode('easy')">Easy</button>
+        <button onclick="setMode('medium')">Medium</button>
+        <button onclick="setMode('hard')">Hard</button>
+    </div>
+
+    <div id="status">Select Mode</div>
+    <div id="aiThinking"></div>
+
+    <div class="score">
+        <span>X: <b id="xScore">0</b></span>
+        <span>O: <b id="oScore">0</b></span>
+        <span>Draw: <b id="dScore">0</b></span>
+    </div>
+
+    <button onclick="toggleTheme()">Dark Mode</button>
+
+    <div class="board">
+        <div class="cell" data-i="0"></div>
+        <div class="cell" data-i="1"></div>
+        <div class="cell" data-i="2"></div>
+        <div class="cell" data-i="3"></div>
+        <div class="cell" data-i="4"></div>
+        <div class="cell" data-i="5"></div>
+        <div class="cell" data-i="6"></div>
+        <div class="cell" data-i="7"></div>
+        <div class="cell" data-i="8"></div>
+    </div>
+
+    <button onclick="reset()">Restart</button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
